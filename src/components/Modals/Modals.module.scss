@@ -1,0 +1,309 @@
+@import "../../variables.module.scss"; 
+
+:global(.tooltip)  {
+
+    :global(.tooltip-inner) {
+      background-color: #fff;
+      color:#808080;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      font-size: 12px;
+      padding: 10px 10px;
+    }
+    :global(.tooltip-arrow) {
+       display: none;
+    }
+  }
+  .tooltips {
+    cursor: pointer;
+    position: relative;
+  
+    svg {
+      color: #808080;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+.rightLabel {
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    color: var(--Main2);
+
+}
+
+.formField {
+    margin-bottom:20px;
+
+    :global(.form-label) {
+        font-size: 17px;
+        font-weight: 400;
+        color: #4D4D4D;
+        margin-bottom: 7px;
+
+        &.labelHide {
+            display: block;
+            opacity: 0;
+        }
+    }
+    :global(.form-control) {
+        border-radius: 50px;
+        height: 50px;
+        padding: 0px 25px;
+        border-color:#E5E5E5;
+
+        &:focus {
+            box-shadow:none;
+            border-color:var(--Main2);
+        }
+    }
+
+    textarea {
+        
+        &:global(.form-control) {
+            border-radius:10px;
+            padding: 20px 25px;
+
+        }
+     }
+
+    :global(.form-select) {
+        border-radius: 50px;
+        height: 50px;
+        padding: 0px 25px;
+        border-color:#E5E5E5;
+
+        &:focus {
+            box-shadow:none;
+            border-color:var(--Main2);
+        }
+    }
+    :global(.css-1s2u09g-control), :global(.css-1pahdxg-control) {
+        border-radius: 50px;
+        height: 50px;
+        padding:0px 10px 0px 25px;
+        border-color:#E5E5E5;
+        box-shadow: none;
+
+        &:hover, &:focus {
+            border-radius: 50px;
+            height: 50px;
+            border-color:#E5E5E5;
+            box-shadow: none;
+        }
+
+        :global(.css-1okebmr-indicatorSeparator) {
+          display: none;
+        }
+        :global(.css-319lph-ValueContainer) {
+            padding: 0px;
+        }
+        :global(.css-tlfecz-indicatorContainer), :global(.css-1gtu0rj-indicatorContainer) {
+          padding: 0px 0px;
+        }
+    
+    }
+    .addressBtn {
+        border-radius: 50px;
+        height: 50px;
+        padding: 0px 25px;
+        border: 1px solid #E5E5E5;
+        display: block;
+        width: 100%;
+        text-align: left;
+        background:#fff;
+        color:var(--Main2);
+    }
+}
+
+.ctsModal {
+
+    :global(.modal-dialog) {
+        
+        :global(.modal-content) {
+            border: none;
+            border-radius: 10px;
+            
+            :global(.modal-header) {
+                padding: 20px 20px;
+                
+                :global(.modal-title) { 
+                    font-size: 18px;
+                }
+                :global(.btn-close) {
+                    display:none;
+                }
+            }
+            
+            :global(.modal-body) {
+               background:#FAFAFA;
+               padding: 20px 20px;
+
+            }
+
+            
+            :global(.modal-footer) {
+                padding: 20px 20px;
+                justify-content: space-between;
+
+                .rightOption {
+                    color:#BCBCBC;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+
+                :global(.btn) {
+                    min-width: 100px;
+                    margin: 0;
+                    margin-left: 15px;
+                    border: 1px solid #E5E5E5;
+                    background: #fff;
+                    color: #BCBCBC;
+                    border-radius: 50px;
+                    font-size: 14px;
+                    padding: 8px 5px;
+
+                    &.btnSubmit {
+                        background:var(--Main2);
+                        border: 1px solid var(--Main2);
+                        color:#fff;
+                    }
+                }
+            }            
+
+        }
+    }
+}
+
+.rightRed{
+    color: #FDB7B6 !important;
+}
+
+.sortCategory{
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--Color) !important;
+    transition: 0.1s;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.checkboxlabel{
+    display: flex;
+    align-items: center;
+}j
+.radiojustify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkboxinput{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+
+}
+.radioinput{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.bottomRight{
+    justify-content: flex-end !important;
+}
+
+
+.editCategory{
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+
+    ul{
+        display: flex;
+        list-style: none;
+        margin-bottom: 0px;
+        align-items: center;
+
+        li{
+            padding-right: 20px;
+            a{
+                text-decoration: none;
+                color: #4D4D4D;
+            }
+        }
+    }
+}
+
+
+.moreOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 130px;
+    height: 32px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding:20px 0px;
+    margin-bottom: 30px;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--Color);
+    transition: 0.1s;
+
+    &:hover {
+        box-shadow: 1px 5px 10px #99a2ac80;
+        color: var(--Main2);
+    }
+}
+
+
+.cameraiconfleld{
+    display: flex;
+    align-items: center;
+}
+.cameraicon{
+    width: 60px;
+    height: 65px;
+    margin-right: 10px;
+    background-color: white;
+    padding: 8px;
+}
+
+.editbranchfield{
+    display: flex;
+    align-items: center;
+    background-color: #478af042;
+    padding: 4px;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+
+
+
+@media (min-width: 576px) {
+    
+    :global(.modal-dialog) {
+        max-width:600px;
+        transition: all .2s ease !important;
+    }
+    .ctsModalSize {
+
+        :global(.modal-dialog) {
+            max-width:1126px;
+        }
+    }
+
+}

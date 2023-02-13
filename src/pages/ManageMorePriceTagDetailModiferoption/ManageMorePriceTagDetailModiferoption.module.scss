@@ -1,0 +1,85 @@
+.topTable{
+    justify-content: flex-end !important;
+}
+.dropScroll{
+    min-width: 180px;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}
+
+
+.cardBody {
+    background: transparent !important;
+}
+
+
+.pageTitle {
+    z-index: 99;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rowTitleLeft {
+
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          color: #646464;
+
+          .back {
+              color: var(--Main2);
+              text-decoration: none;
+              margin-right: 20px;
+          }
+       }
+    }
+    
+    .rowTitleRight {
+      display:flex;
+
+        
+
+        :global(.btn) {
+            background-color: #fff;
+            border-color: #B3B3B3;
+            color: #B3B3B3;
+            border-radius: 50px;
+            min-width: 80px;
+            padding: 8px 15px;
+            margin-left: 10px;    
+            font-weight: normal;
+            font-size: 14px;
+            white-space: nowrap;
+
+            .icon {
+                margin-right: 5px;
+                margin-top: -1px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+  }
+
+
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

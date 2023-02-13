@@ -1,0 +1,24 @@
+
+
+.tableButton> button{
+    background-color: transparent;
+    color: black;
+    border: 2px solid whitesmoke;
+    margin: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.tableNameDetail{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

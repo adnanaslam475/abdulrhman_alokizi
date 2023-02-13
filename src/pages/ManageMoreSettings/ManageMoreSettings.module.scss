@@ -1,0 +1,41 @@
+.topTable{
+    justify-content: flex-end !important;
+}
+.dropScroll{
+    min-width: 180px;
+}
+.headertabs{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+   
+  }
+  .headertabslinks{
+    display: flex;
+    padding: 0;margin: 0;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+  }
+  .headertabslinks:hover{
+    border-bottom: 2px solid var(--Main2);
+    color: var(--Main2);
+  }
+  .headertabslinks:global(.active){
+    border-bottom: 2px solid var(--Main2);
+    color: var(--Main2);
+  }
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+  .headertabs{
+    overflow-x: auto !important;
+  }
+  
+}

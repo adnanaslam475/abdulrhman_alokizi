@@ -1,0 +1,279 @@
+@import "../../variables.module.scss"; 
+
+.scroll {
+    overflow: hidden;
+    height: calc(100vh - 88px);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
+.sidebarMain {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    transition: .2s ease-in;
+    border-right:1px solid #eeeeee;
+
+    .logoBox {
+        align-items: center;
+        padding: 35px 15px 25px 15px;
+        text-align: center;
+
+        .navlogo {
+            display: block;
+
+            .logoIcon {
+                height: 38px;
+                margin-bottom: 15px;
+            }
+
+            .line {
+                width: 100%;
+            }
+        }
+
+        .hamburgerMenu {
+            position: absolute;
+            right: 10px;
+            color: var(--AdminMain2);
+            font-size: 35px;
+            cursor: pointer;
+            padding: 5px;
+        }
+    }
+
+    .menuList {
+
+        .scroll {
+            list-style: none;
+            margin: 0;
+            padding: 0px 15px;
+
+            li {
+                margin-bottom: 10px;
+
+                .signleMenu {
+                    display: flex;
+                    align-items: center;
+                    color: var(--Color);
+                    text-decoration: none;
+                    padding: 13px;
+                    background-color: transparent;
+                    transition: 0.5s;
+                    border-radius: 50px;
+                    width: 100%;
+                    border: none;
+                    position: relative;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    &:global(.active) {
+                        background-color: var(--Main2);
+                        color: #fff;
+
+                        .menuIcon {
+
+                            .icon {
+                                filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(465%) contrast(240%);
+                            }
+                        }
+
+                        &::after {
+                            filter: none;
+                        }
+                    }
+
+                    .menuIcon {
+                        margin-right: 5px;
+                        position: relative;
+                        text-align: center;
+                        top: -1px;
+                        width: 30px;
+
+                        .icon {
+                           height: 23px;
+                        }
+                    }
+                }
+
+                :global(.btn) {
+                    display: flex;
+                    align-items: center;
+                    color: var(--Color);
+                    text-decoration: none;
+                    padding: 13px;
+                    background-color: transparent;
+                    transition: 0.5s;
+                    border-radius: 50px;
+                    width: 100%;
+                    border: none;
+                    position: relative;
+
+                    &::after {
+                        filter: invert(10%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(-25%) contrast(10%);
+                        width: 15px;
+                        height: 15px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        content: "";
+                        flex-shrink: 0;
+                        margin-left: auto;
+                        margin-top: 8px;
+                        transition: -webkit-transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+                        background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' width='13.001' height='7.002' viewBox='0 0 13.001 7.002'%3e%3cpath id='icon-arrow-white' d='M1.646,4.646a.5.5,0,0,1,.708,0L8,10.293l5.646-5.647a.5.5,0,0,1,.708.708l-6,6a.5.5,0,0,1-.708,0l-6-6a.5.5,0,0,1,0-.708Z' transform='translate(-1.499 -4.499)' fill='%23fff' fill-rule='evenodd'/%3e%3c/svg%3e ");
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    .menuIcon {
+                        margin-right: 5px;
+                        position: relative;
+                        text-align: center;
+                        top: -1px;
+                        width: 30px;
+
+                        .icon {
+                            height:23px;
+                        }
+                    }
+                }
+
+                .first {
+                    display: none;
+                    transition: 0.5s;
+
+                    li {
+
+                        a {
+                            align-items: center;
+                            background-color: transparent;
+                            border-radius: 5px;
+                            display: flex;
+                            padding: 12px 0;
+                            color: var(--Color);
+                            text-decoration: none;
+                            transition: .5s;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    :global(.btn),
+                    .signleMenu {
+                        background-color: var(--Main2);
+                        color: #fff;
+
+                        .menuIcon {
+
+                            .icon {
+                                filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(465%) contrast(240%);
+                            }
+                        }
+
+                        &::after {
+                            filter: none;
+                        }
+                    }
+                }
+
+                &.active {
+
+                    :global(.btn) {
+                        background-color: var(--Main2);
+                        color: #fff;
+
+                        .menuIcon {
+
+                            .icon {
+                                filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(465%) contrast(240%);
+                            }
+                        }
+
+                        &::after {
+                            filter: none;
+                            transform: rotate(-180deg);
+                            margin-top: -8px;
+                        }
+                    }
+
+                    .first {
+                        display: block;
+                        list-style: none;
+                        margin: 0;
+                        padding-left: 47px;
+
+                        li {
+
+                            :global(.active) {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+    .sidebarBody {
+        
+        .sidebarMain {
+            left: -250px;
+            transition:0.5s;
+            z-index:9999;
+        }
+        
+        .hideBg {
+            width: 100%;
+            position: fixed;
+            left: -100%;
+            background: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            top: 0;
+            z-index: 99;
+        }
+        
+        &.show {
+
+            .sidebarMain {
+                left: 0px;
+            }
+            
+            .hideBg {
+                left: 0%;
+            }
+        }
+    }
+}

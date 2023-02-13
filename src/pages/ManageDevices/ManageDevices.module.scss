@@ -1,0 +1,37 @@
+
+.tableButton> button{
+    background-color: transparent;
+    color: black;
+    border: 2px solid whitesmoke;
+    margin: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.tableNameDetail{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.notUsedBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 32px;
+    background-color: #5ecfd1;
+    padding: 4px 8px 4px 8px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+  }
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

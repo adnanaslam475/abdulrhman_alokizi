@@ -1,0 +1,46 @@
+.topTable{
+    justify-content: flex-end !important;
+}
+.dropScroll{
+    min-width: 180px;
+}
+
+.salesBranch{
+    button{
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #4D4D4D !important;
+        background: transparent !important;
+        border: none;
+        padding: 0px;
+    }
+    :after{
+        margin-bottom: 5px;
+    }
+    .salesDropdown{
+        overflow: hidden;
+        height: calc(100vh - 300px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 1px 5px 2px #0000001f;
+
+        a{
+            color: #4D4D4D;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0px;
+            font-size: 12px;
+        }
+    }
+}
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

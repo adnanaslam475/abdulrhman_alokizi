@@ -1,0 +1,158 @@
+.cardBody {
+    background: transparent !important;
+}
+
+.tableCt{
+
+    tr{
+
+        td{
+            line-height: 35px !important;
+
+            img{
+                width: 35px;
+                height: 35px;
+            }
+            :global(.form-check-input){
+                width: 54px !important;
+                height: 28px !important;
+            }
+        }
+    }
+}
+
+.pageTitle {
+    z-index: 99;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rowTitleLeft {
+
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          color: #646464;
+
+          .back {
+              color: var(--Main2);
+              text-decoration: none;
+              margin-right: 20px;
+          }
+       }
+    }
+    
+    .rowTitleRight {
+      display:flex;
+
+        
+
+        :global(.btn) {
+            background-color: #fff;
+            border-color: #B3B3B3;
+            color: #B3B3B3;
+            border-radius: 50px;
+            min-width: 80px;
+            padding: 8px 15px;
+            margin-left: 10px;    
+            font-weight: normal;
+            font-size: 14px;
+            white-space: nowrap;
+
+            .icon {
+                margin-right: 5px;
+                margin-top: -1px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+  }
+
+.contentBox {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px 25px;
+    margin-bottom: 30px;
+    background: #fff;
+
+    &.countCardBox {
+        padding: 30px 25px;
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #808080;
+            margin-bottom: 12px;
+        }
+        h3 {
+            margin: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            color: #4D4D4D;
+            line-height: 2rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .tagsList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            span {
+                display: block;
+                border: 1px solid var(--Main2);
+                padding: 5px 15px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+.formField {
+    margin-bottom: 15px;
+
+    label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #808080;
+    }
+    p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0px;
+        border-bottom: 2px solid #E9E9E9;
+        padding:6px 0px 8px 0px;
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

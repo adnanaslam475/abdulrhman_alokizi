@@ -1,0 +1,49 @@
+.topTable{
+    justify-content: flex-end !important;
+}
+.dropScroll{
+    min-width: 180px;
+}
+.grapTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    h5{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 24px;
+    }
+   
+}
+
+.dataTableBox{
+    padding: 30px;
+}
+
+.calendarDate{
+    background-color: #fff;
+    border: 1px solid #B3B3B3;
+    color: #B3B3B3;
+    border-radius: 50px;
+    min-width: 80px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.calendarDate[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

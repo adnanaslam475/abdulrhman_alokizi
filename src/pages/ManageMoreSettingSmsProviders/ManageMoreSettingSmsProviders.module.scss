@@ -1,0 +1,101 @@
+.cardBody {
+    background: transparent !important;
+  }
+  
+  .activeBtn {
+    background: #00cecc;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 12px;
+  }
+  .tableCt tbody tr td{
+   width: 30%;   
+  }
+  
+  .pageTitle {
+    z-index: 99;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .rowTitleLeft {
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        color: #646464;
+      }
+    }
+  }
+  
+  .contentBox {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background: #fff;
+  
+    &.countCardBox {
+      padding: 30px 25px;
+    }
+  }
+
+
+  .paymentIntegrations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    border-bottom: 1px solid #ececec !important;
+
+    .paymentBox{
+      display: flex;
+      align-items: center;
+
+      img{
+        width: 100px;
+        height: 100px;
+        margin-right: 32px;
+      }
+
+      h4{
+        font-weight: 400;
+        font-size: 16px;
+        color: #4D4D4D;
+        margin-bottom: 0px;
+      }
+    }
+
+    a{
+      border: 1px solid #B3B3B3 !important;
+      border-radius: 100px;
+      padding: 10px 24px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #B3B3B3 !important;
+    }
+  }
+
+ 
+  
+  /*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+  @media (max-width: 767px) {
+    .paymentIntegrations{
+      display: block;
+      text-align: center;
+      
+      .paymentBox{
+
+        img{
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  

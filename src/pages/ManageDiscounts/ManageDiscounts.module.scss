@@ -1,0 +1,113 @@
+.cardBody {
+    background: transparent !important;
+}
+
+.pageTitle {
+    z-index: 99;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rowTitleLeft {
+
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          color: #646464;
+
+          .back {
+              color: var(--Main2);
+              text-decoration: none;
+              margin-right: 20px;
+          }
+       }
+    }
+    
+    .rowTitleRight {
+      display:flex;
+
+        
+
+        :global(.btn) {
+            background-color: #fff;
+            border-color: #B3B3B3;
+            color: #B3B3B3;
+            border-radius: 50px;
+            min-width: 80px;
+            padding: 8px 15px;
+            margin-left: 10px;    
+            font-weight: normal;
+            font-size: 14px;
+            white-space: nowrap;
+
+            .icon {
+                margin-right: 5px;
+                margin-top: -1px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+  }
+
+  .usermore{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+.editRole{
+    font-size: small;
+    
+}
+
+
+
+
+.moreOption {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding:30px 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--Color);
+    transition: 0.1s;
+
+    &:hover {
+        box-shadow: 1px 5px 10px #99a2ac80;
+        color: var(--Main2);
+    }
+}
+
+.discountmore{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.discountmoreper{
+    font-size: small;
+    margin-top: 8px;
+    color: gray;
+
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  
+}

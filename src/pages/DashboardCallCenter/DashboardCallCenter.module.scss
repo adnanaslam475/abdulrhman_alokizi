@@ -1,0 +1,264 @@
+.cardBody {
+    background: transparent !important;
+}
+.selectDropdown {
+  display: inline-block;
+      margin-left: 10px;
+      
+
+  :global(.multi-select) {
+
+    :global(.dropdown-container) {
+        background-color: #fff;
+        border-color: #B3B3B3;
+        color: #B3B3B3;
+        border-radius: 50px;
+
+        :global(.dropdown-heading-value) {
+          width: 100px;
+          text-align: left;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          white-space: break-spaces;
+          word-break: break-all;
+          font-size: 14px;
+
+          span {
+            display: block;
+          }
+        }
+
+        :global(.clear-selected-button) {
+          display:none;
+        }
+    }
+
+    :global(.dropdown-content) {
+      z-index: 99;
+
+      :global(.panel-content) {
+        padding:15px 15px;
+        border-radius: 10px;
+        width: 229px;
+
+        :global(.search) {
+           border:none;
+           margin-bottom: 5px;
+
+          input {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 50px;
+            font-size: 12px;
+            padding: 0px 15px;
+          }
+        }
+        :global(.options) {
+
+          :global(.select-item)  {
+            padding: 4px 0px;
+            font-weight: 400;
+            color: #4D4D4D;
+            background: #fff !important;
+
+            :global(.item-renderer) {
+              position: relative;
+              align-items: center;
+              
+                input {
+                  width: 18px;
+                  height: 18px;
+                  position: relative;
+                  top: 1px;
+                  left: 2px;
+                  border: none;
+                  border-radius: 14px;
+                  margin-right: 10px;
+                }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+
+  :global(.css-1s2u09g-control), :global(.css-1pahdxg-control) {
+    border: 1px solid #B3B3B3;
+    padding: 0px 15px;
+    border-radius: 50px;
+    box-shadow: none;
+
+    &:hover, &:focus {
+      border: 1px solid #B3B3B3;
+      box-shadow: none;
+    }
+
+    :global(.css-1okebmr-indicatorSeparator) {
+      display: none;
+    }
+
+    :global(.css-tlfecz-indicatorContainer), :global(.css-1gtu0rj-indicatorContainer) {
+      padding: 0px 0px;
+    }
+  }
+
+}
+
+
+.pageTitle {
+    z-index: 99;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rowTitleLeft {
+
+        h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          color: #646464;
+
+          .back {
+              color: var(--Main2);
+              text-decoration: none;
+              margin-right: 20px;
+          }
+       }
+    }
+    
+    .rowTitleRight {
+      display:flex;
+
+
+        
+
+        :global(.btn) {
+            background-color: #fff;
+            border-color: #B3B3B3;
+            color: #B3B3B3;
+            border-radius: 50px;
+            min-width: 80px;
+            padding: 8px 15px;
+            margin-left: 10px;    
+            font-weight: normal;
+            font-size: 14px;
+            white-space: nowrap;
+
+            .icon {
+                margin-right: 5px;
+                margin-top: -1px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+  }
+
+  .usermore{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+.editRole{
+    font-size: small;
+    
+}
+
+
+
+.moreOption {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding:30px 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--Color);
+    transition: 0.1s;
+
+    // &:hover {
+    //     box-shadow: 1px 5px 10px #99a2ac80;
+    //     color: var(--Main2);
+    // }
+}
+
+.discountmore{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.discountmoreper{
+    font-size: large;
+    font-weight: 800;
+    margin-top: 18px;
+
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+  .pageTitle{
+    overflow-x: auto !important;
+  }
+}
+
+
+
+//   .tableCt tbody tr td{
+//    width: 30%;   
+//   }
+ 
+  
+  .contentBox {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px 25px;
+    margin-bottom: 30px;
+    background: #fff;
+  
+    &.countCardBox {
+      padding: 30px 25px;
+  
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #808080;
+        margin-bottom: 12px;
+      }
+      h3 {
+        margin: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #4d4d4d;
+        line-height: 2rem;
+  
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+}

@@ -1,0 +1,79 @@
+@import "../../variables.module.scss"; 
+
+.filterDropdown {
+    position: relative;
+
+    button {
+        width: 100%;
+        border-radius: 50px;
+        min-height: 50px;
+        padding:10px 25px;
+        border:1px solid #E5E5E5;
+        text-align: left;
+        background: #fff;
+
+        .dropdownIcon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #c2bcbc;
+        }
+    }
+
+    .dropdownOption {
+        position: absolute;
+        z-index: 1;
+        background: #fff;
+        width: 100%;
+        border-radius: 15px;
+        top: 100%;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px 15px;
+
+        :global(.form-control) {
+            border: 1px solid #cbc8c8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            min-height: 1px;
+            max-height: 200px;
+            overflow: hidden;
+            overflow-y: scroll;
+    
+            li {
+                cursor: pointer;
+                width: 100%;
+                padding: 10px 15px;
+    
+                &:hover {
+                    background-color: #ebebeb;
+                }
+            }
+    
+        }
+    }
+}
+
+.selectedOption {
+    border: 1px solid var(--Main2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin:4px 5px 4px 0px;
+    color: #2b2b2b;
+    transition: 0.5s;
+    display: inline-block;
+
+    &:hover {
+       border: 1px solid #be0707;
+    }
+}
+
+.singleselectedOption {
+
+}
